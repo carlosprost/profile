@@ -1,0 +1,96 @@
+@import '../../../../node_modules//@angular/material/theming';
+
+// Copy the palettes from your selected theme (usually theme.scss).
+$app-primary: mat-palette($mat-blue);
+$app-accent: mat-palette($mat-purple);
+$app-warn: mat-palette($mat-red);
+
+// Create your Sass color vars (will be available in all the project)
+$primary: mat-color($app-primary, 900);
+$accent: mat-color($app-accent);
+$warn: mat-color($app-warn);
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: start;
+        text-indent: 60px;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .tarjeta{
+            height: 500px;
+            width: 320px;
+            margin: 100px 15px;
+            background-color: #101010;
+            border-radius: 10%;
+            box-shadow: 16px 14px 20px #0000008c;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .tarjeta::before{
+            content: "";
+            position: absolute;
+            height: 600px;
+            width: 600px;
+            background-image: conic-gradient($accent 20deg, transparent 120deg);
+            animation: rotar 2s linear infinite;
+        }
+        
+        @keyframes rotar{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(-360deg);
+            }
+        }
+        
+        .tarjeta::after{
+            content: "";
+            position: absolute;
+            height: 490px;
+            width: 310px;
+            background-color: #101010;
+            border-radius: 10%;
+            box-shadow: inset 16px 14px 20px #0000008c;;
+        }
+
+        .example-card {
+            z-index: 4;
+            max-width: 300px;
+            height: 480px;
+            background-color: black;
+            border-radius: 30px;
+            box-shadow: 1px 2px 2px black, -1px 2px 2px #101010;
+
+            p {
+                text-indent: 5px;
+            }
+
+            button{
+                margin-left: 5px;
+            }
+        }
+
+
+    }
+}

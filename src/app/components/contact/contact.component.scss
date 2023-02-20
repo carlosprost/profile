@@ -1,0 +1,78 @@
+@import '../../../../node_modules//@angular/material/theming';
+
+// Copy the palettes from your selected theme (usually theme.scss).
+$app-primary: mat-palette($mat-blue);
+$app-accent:  mat-palette($mat-purple);
+$app-warn:    mat-palette($mat-red);
+
+// Create your Sass color vars (will be available in all the project)
+$primary: mat-color($app-primary, 900);
+$accent: mat-color($app-accent);
+$warn: mat-color($app-warn);
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    background-image: linear-gradient(135deg, $accent, transparent, transparent);
+    background-size: 200% 200%;
+    animation: fondo-anim 5s ease infinite;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .formularioContacto{
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .form {
+            min-width: 250px;
+            max-width: 500px;
+            width: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .input{
+            width: 100%;
+            height: 100%;
+            margin: 10px auto;
+            
+            .full-width {
+                width: 100%;
+            }
+        }
+    }
+
+    .redesSociales{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            width: 75ch;
+        }
+    }
+    
+      
+}
+
+@keyframes fondo-anim{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position:  0 50%;}
+  }

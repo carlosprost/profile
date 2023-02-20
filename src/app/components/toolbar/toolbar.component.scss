@@ -1,0 +1,45 @@
+@import '../../../../node_modules//@angular/material/theming';
+
+// Copy the palettes from your selected theme (usually theme.scss).
+$app-primary: mat-palette($mat-grey, 900);
+$app-accent:  mat-palette($mat-purple);
+$app-warn:    mat-palette($mat-red);
+
+// Create your Sass color vars (will be available in all the project)
+$primary: mat-color($app-primary, 900);
+$accent: mat-color($app-accent);
+$warn: mat-color($app-warn);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .section-titulo{
+        width: 50%;
+        text-align: center;
+        color: $accent;
+
+        .titulo{
+            font-size: 5em;
+        }
+
+        .subtitulo{
+            font-size: 3em;
+        }
+
+        .skills{
+            font-size: 2em;
+        }
+    }
+    
+}

@@ -1,0 +1,37 @@
+<div class="container">
+
+    <section class="formularioContacto">
+        <h1>Contacto</h1>
+        <form class="form" [formGroup]="contacto" (submit)="onSubmit()">
+
+            <div class="input">
+                <mat-form-field class="full-width">
+                    <mat-label>Nombre</mat-label>
+                    <input type="text" matInput formControlName="nombre" placeholder="Nombre">
+                </mat-form-field>
+            </div>
+
+            <div class="input">
+                <mat-form-field class="full-width">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput formControlName="correo" placeholder="Correo Electronico">
+                </mat-form-field>
+            </div>
+
+            <div class="input">
+                <mat-form-field class="full-width">
+                    <mat-label>Contenido</mat-label>
+                    <textarea matInput placeholder="Contenido" formControlName="contenido" rows="7"></textarea>
+                </mat-form-field>
+            </div>
+
+            <div>
+                <button mat-raised-button color="accent" [disabled]="contacto.invalid">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="redesSociales">
+        <p>Si te interesa mi trabajo, puedes contactarme. Escribeme por aquí o por medio de mis redes sociales.</p>
+    </section>
+</div>
