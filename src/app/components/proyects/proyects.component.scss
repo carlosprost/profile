@@ -1,14 +1,8 @@
-@import '../../../../node_modules//@angular/material/theming';
-
-// Copy the palettes from your selected theme (usually theme.scss).
-$app-primary: mat-palette($mat-blue);
-$app-accent: mat-palette($mat-purple);
-$app-warn: mat-palette($mat-red);
-
-// Create your Sass color vars (will be available in all the project)
-$primary: mat-color($app-primary, 900);
-$accent: mat-color($app-accent);
-$warn: mat-color($app-warn);
+$primary: #6DB1FF;
+$succes: #3CC951;
+$info: #43C1F1;
+$warning: #F7F022;
+$danger: #F73C3C;
 
 .container {
     width: 100%;
@@ -18,11 +12,11 @@ $warn: mat-color($app-warn);
     justify-content: center;
     align-items: center;
 
-    h1 {
-        text-align: start;
-        text-indent: 60px;
+    h3 {
+        text-align: center;
         font-size: 50px;
         margin-bottom: 30px;
+        color: $primary;
     }
 
 
@@ -36,7 +30,7 @@ $warn: mat-color($app-warn);
             height: 500px;
             width: 320px;
             margin: 100px 15px;
-            background-color: #101010;
+            background-color: $info;
             border-radius: 10%;
             box-shadow: 16px 14px 20px #0000008c;
             position: relative;
@@ -51,7 +45,7 @@ $warn: mat-color($app-warn);
             position: absolute;
             height: 600px;
             width: 600px;
-            background-image: conic-gradient($accent 20deg, transparent 120deg);
+            background-image: conic-gradient($warning 20deg, transparent 120deg);
             animation: rotar 2s linear infinite;
         }
         

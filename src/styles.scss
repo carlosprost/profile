@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -12,21 +11,23 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$profile-primary: mat.define-palette(mat.$grey-palette, 900);
-$profile-accent: mat.define-palette(mat.$purple-palette, A200, A100, A400);
+$profile-primary: mat.define-palette(mat.$blue-palette, 500);
+$profile-accent: mat.define-palette(mat.$yellow-palette, 500, A200, A100);
 
 // The warn palette is optional (defaults to red).
 $profile-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$profile-theme: mat.define-light-theme((
-  color: (
-    primary: $profile-primary,
-    accent: $profile-accent,
-    warn: $profile-warn,
+$profile-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $profile-primary,
+      accent: $profile-accent,
+      warn: $profile-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -34,12 +35,19 @@ $profile-theme: mat.define-light-theme((
 @include mat.all-component-themes($profile-theme);
 
 /* You can add global styles to this file, and also import other style files */
-html{
+html {
   scroll-behavior: smooth;
 }
-html, body { height: 100%; overflow-x: hidden;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-section[id]{
+section[id] {
   scroll-margin-top: 70px;
 }

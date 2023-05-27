@@ -1,3 +1,9 @@
+$primary: #6DB1FF;
+$succes: #3CC951;
+$info: #43C1F1;
+$warning: #F7F022;
+$danger: #F73C3C;
+
 .container {
   width: 100%;
   height: 100vh;
@@ -6,9 +12,14 @@
   justify-content: center;
   align-items: center;
 
+  color: $primary;
+
   .descripcion {
     width: 50%;
-
+    h3{
+      font-size: 1.5em;
+      font-weight: bold;
+    }
     p {
       width: 75ch;
     }
@@ -16,9 +27,9 @@
 
   .img {
     width: 50%;
-
     img {
       width: 300px;
+      border: 1px solid $primary;
       border-radius: 50%;
       float: right;
     }
