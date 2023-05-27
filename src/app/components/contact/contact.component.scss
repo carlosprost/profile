@@ -1,21 +1,15 @@
-@import '../../../../node_modules//@angular/material/theming';
-
-// Copy the palettes from your selected theme (usually theme.scss).
-$app-primary: mat-palette($mat-blue);
-$app-accent:  mat-palette($mat-purple);
-$app-warn:    mat-palette($mat-red);
-
-// Create your Sass color vars (will be available in all the project)
-$primary: mat-color($app-primary, 900);
-$accent: mat-color($app-accent);
-$warn: mat-color($app-warn);
+$primary: #6db1ff;
+$success: #3cc951;
+$info: #43c1f1;
+$warning: #f7f022;
+$danger: #f73c3c;
 
 .container{
     width: 100vw;
     height: 100vh;
     position: relative;
     background-color: black;
-    background-image: linear-gradient(135deg, $accent, transparent, transparent);
+    background-image: linear-gradient(135deg, $primary, transparent, transparent);
     background-size: 200% 200%;
     animation: fondo-anim 5s ease infinite;
 

@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ProyectsComponent {
 
+
+
+
+  getRepositorio(repo: string) {
+    window.location.href = `${repo}`;
+  }
+
+  getDemo(demo: string) {
+    window.location.href = `${demo}`;
+  }
 }
