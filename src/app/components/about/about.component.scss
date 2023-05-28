@@ -5,33 +5,43 @@ $warning: #F7F022;
 $danger: #F73C3C;
 
 .container {
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
 
   color: $primary;
 
   .descripcion {
-    width: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h3{
       font-size: 1.5em;
       font-weight: bold;
     }
     p {
-      width: 75ch;
+      width: 90%;
+      font-size: 1rem;
     }
   }
 
   .img {
-    width: 50%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
     img {
-      width: 300px;
-      border: 1px solid $primary;
+      width: 30%;
       border-radius: 50%;
-      float: right;
+      object-fit: cover;
     }
   }
 }

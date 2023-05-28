@@ -1,22 +1,120 @@
-$primary: #6DB1FF;
-$succes: #3CC951;
-$info: #43C1F1;
-$warning: #F7F022;
-$danger: #F73C3C;
+$primary: #6db1ff;
+$succes: #3cc951;
+$info: #43c1f1;
+$warning: #f7f022;
+$danger: #f73c3c;
 
-.spacer {
-    flex: 1 1 auto;
-}
+.container-menu {
+  width: 100vw;
+  height: 60px;
+  background-color: $primary;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
-.a{
-    text-decoration: none;
-}
-.a:hover{
-    border-bottom: 4px solid $warning;
-}
-.a::before{
-    border-bottom: 4px solid $warning;
-}
-.a-selected{
-    border-bottom: 4px solid $warning;
+  div {
+    width: auto;
+    padding: 0 20px;
+  }
+
+  .menu-principal {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 60px;
+    left: 0%;
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(-100%);
+
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .a {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+      .a:hover {
+        border-bottom: 4px solid $warning;
+      }
+      .a::before {
+        border-bottom: 4px solid $warning;
+      }
+      .a-selected {
+        border-bottom: 4px solid $warning;
+      }
+    }
+
+    .divider {
+      width: 70%;
+      height: 1px;
+      background-color: white;
+      margin: 20px auto;
+    }
+
+    .social-buttons-menu {
+      width: 100%;
+      height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        width: 70px;
+        height: 70px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .menu-principal-visible {
+    transform: translateX(0%);
+  }
+
+  .toggle {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      width: 60%;
+      height: 3px;
+      background-color: white;
+      display: block;
+      margin: 5px 15px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .close_toggle {
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(0px, 9px);
+    }
+    span:nth-child(2) {
+      display: none;
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(0px, -9px);
+    }
+  }
 }

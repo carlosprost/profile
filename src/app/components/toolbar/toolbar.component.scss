@@ -10,25 +10,25 @@ $danger: #F73C3C;
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .section-titulo {
-    width: 50%;
+    width: 90%;
     text-align: center;
     color: $primary;
 
     .titulo {
-      font-size: 5em;
+      font-size: 3em;
     }
 
     .subtitulo {
-      font-size: 3em;
+      font-size: 2em;
     }
 
     .skills {

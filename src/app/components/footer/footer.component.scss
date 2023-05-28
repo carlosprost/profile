@@ -1,8 +1,8 @@
-$primary: #6DB1FF;
-$succes: #3CC951;
-$info: #43C1F1;
-$warning: #F7F022;
-$danger: #F73C3C;
+$primary: #6db1ff;
+$succes: #3cc951;
+$info: #43c1f1;
+$warning: #f7f022;
+$danger: #f73c3c;
 
 .container {
   width: 100vw;
@@ -17,6 +17,11 @@ $danger: #F73C3C;
     padding: 0 20px;
     display: flex;
     flex-direction: row;
+    color: $primary;
+
+    h3{
+      font-size: 1.5rem;
+    }
 
     ul {
       list-style: none;
@@ -24,7 +29,8 @@ $danger: #F73C3C;
 
     a {
       text-decoration: none;
-      color: white;
+      font-size: 1.2rem;
+      color: $primary;
     }
     a:hover {
       border-bottom: 4px solid $warning;
@@ -43,5 +49,6 @@ $danger: #F73C3C;
     max-height: 30px;
     padding: 0 20px;
     margin-bottom: -10px;
+    color: $primary;
   }
 }

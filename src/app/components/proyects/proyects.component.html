@@ -1,146 +1,161 @@
 <div class="container">
   <h3>Proyectos</h3>
   <div class="cards">
-    <div class="tarjeta">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Pokerama</mat-card-title>
-        </mat-card-header>
-        <img
-          mat-card-image
-          src="../../../assets/proyects/pokerama.png"
-          alt="Pokerama"
-        />
-        <mat-card-content>
-          <p>
-            El clasico juego de memoria con los personjes de Pokemon. Hecho con
-            HTML, CSS y JavaScript.
-          </p>
-        </mat-card-content>
-        <mat-card-actions align="end">
-          <button
-            mat-raised-button
-            color="accent"
-            (click)="getRepositorio('https://github.com/carlosprost/Pokerama')"
-          >
-            Repositorio
-          </button>
-          <button
-            mat-raised-button
-            color="accent"
-            (click)="getDemo('https://pokerama.netlify.app')"
-          >
-            Demo
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Pokerama</mat-card-title>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="../../../assets/proyects/pokerama.png"
+        alt="Pokerama"
+      />
+      <mat-card-content align="start">
+        <p>
+          El clásico juego de memoria con los personajes de Pokemon. Hecho con
+          HTML, CSS y JavaScript.
+        </p>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button
+          mat-raised-button
+          color="accent"
+          (click)="getRepositorio('https://github.com/carlosprost/Pokerama')"
+        >
+          Repositorio
+        </button>
+        <button
+          mat-raised-button
+          color="accent"
+          (click)="getDemo('https://pokerama.netlify.app')"
+        >
+          Demo
+        </button>
+      </mat-card-actions>
+    </mat-card>
 
-    <div class="tarjeta">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Pokedex</mat-card-title>
-        </mat-card-header>
-        <img
-          mat-card-image
-          src="../../../assets/proyects/pokedex.png"
-          alt="Pokedex"
-        />
-        <mat-card-content>
-          <p>
-            Listado de Pokemon, desarrollado en Angular, consumiendo API
-            PokeAPIV.2.
-          </p>
-        </mat-card-content>
-        <mat-card-actions align="end">
-          <button
-            mat-raised-button
-            color="accent"
-            (click)="getRepositorio('https://github.com/carlosprost/pokedex')"
-          >
-            Repositorio
-          </button>
-          <button
-            mat-raised-button
-            color="accent"
-            (click)="getDemo('https://pokedex-cap.netlify.app')"
-          >
-            Demo
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Poke-dex</mat-card-title>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="../../../assets/proyects/pokedex.png"
+        alt="Pokedex"
+      />
+      <mat-card-content align="start">
+        <p>Poke-dex, desarrollado en Angular, consumiendo API PokeAPIV.2.</p>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button
+          mat-raised-button
+          color="accent"
+          (click)="getRepositorio('https://github.com/carlosprost/pokedex')"
+        >
+          Repositorio
+        </button>
+        <button
+          mat-raised-button
+          color="accent"
+          (click)="getDemo('https://pokedex-cap.netlify.app')"
+        >
+          Demo
+        </button>
+      </mat-card-actions>
+    </mat-card>
 
-    <div class="tarjeta">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Piedra, Papel y Tijera</mat-card-title>
-        </mat-card-header>
-        <img
-          mat-card-image
-          src="../../../assets/proyects/PiedraPapelYTijera.png"
-          alt="Piedra, Papel Y Tijera"
-        />
-        <mat-card-content>
-          <p>
-            Juego clasico de "Piedra, Papel y Tijera", desarrollado en HTML, CSS
-            y JavaScript.
-          </p>
-        </mat-card-content>
-        <mat-card-actions align="end">
-          <button
-            mat-raised-button
-            color="accent"
-            (click)="
-              getRepositorio('https://github.com/carlosprost/PiedraPapelTijera')
-            "
-          >
-            Repositorio
-          </button>
-          <button
-            mat-raised-button
-            color="accent"
-            (click)="getDemo('https://piedrapapeltijera-cap.netlify.app')"
-          >
-            Demo
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-    <div class="tarjeta">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Generador de Contraseñas</mat-card-title>
-        </mat-card-header>
-        <img
-          mat-card-image
-          src="../../../assets/proyects/Generador de Contraseñas.png"
-          alt="Generador De Contraseñas"
-        />
-        <mat-card-content>
-          <p>Generador de contraseñas desarrollado en HTML, CSS y JavaScript</p>
-        </mat-card-content>
-        <mat-card-actions align="end">
-          <button
-            mat-raised-button
-            color="accent"
-            (click)="
-              getRepositorio(
-                'https://github.com/carlosprost/Retos-de-programacion/tree/main/Generador%20de%20Contrase%C3%B1as'
-              )
-            "
-          >
-            Repositorio
-          </button>
-          <button
-            mat-raised-button
-            color="accent"
-            (click)="getDemo('https://passwordgenerator-cap.netlify.app')"
-          >
-            Demo
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Simon</mat-card-title>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="../../../assets/proyects/Simon.png"
+        alt="simon"
+      />
+      <mat-card-content align="start">
+        <p>Juego clásico de "Simon", desarrollado en Angular.</p>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button
+          mat-raised-button
+          color="accent"
+          (click)="getRepositorio('https://github.com/carlosprost/simon')"
+        >
+          Repositorio
+        </button>
+        <button
+          mat-raised-button
+          color="accent"
+          (click)="getDemo('https://simon-gameapp.netlify.app')"
+        >
+          Demo
+        </button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Tateti</mat-card-title>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="../../../assets/proyects/Tateti.png"
+        alt="Tateti"
+      />
+      <mat-card-content align="start">
+        <p>Juego Tateti o 3 en raya, desarrollado en Angular.</p>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button
+          mat-raised-button
+          color="accent"
+          (click)="getRepositorio('https://github.com/carlosprost/tateti')"
+        >
+          Repositorio
+        </button>
+        <button
+          mat-raised-button
+          color="accent"
+          (click)="getDemo('https://tateti-gameapp.netlify.app')"
+        >
+          Demo
+        </button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Generador de Contraseñas</mat-card-title>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="../../../assets/proyects/Generador de Contraseñas.png"
+        alt="Generador De Contraseñas"
+      />
+      <mat-card-content align="start">
+        <p>Generador de contraseñas desarrollado en HTML, CSS y JavaScript</p>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button
+          mat-raised-button
+          color="accent"
+          (click)="
+            getRepositorio(
+              'https://github.com/carlosprost/Retos-de-programacion/tree/main/Generador%20de%20Contrase%C3%B1as'
+            )
+          "
+        >
+          Repositorio
+        </button>
+        <button
+          mat-raised-button
+          color="accent"
+          (click)="getDemo('https://passwordgenerator-cap.netlify.app')"
+        >
+          Demo
+        </button>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>
